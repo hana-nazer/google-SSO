@@ -1,0 +1,17 @@
+.userData-wrapper{
+    border: 1px solid;
+}
+
+.userData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

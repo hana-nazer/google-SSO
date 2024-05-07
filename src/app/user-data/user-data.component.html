@@ -1,0 +1,23 @@
+<div class="flex items-center w-full justify-center userData-wrapper" *ngIf="userData">
+  <div class="max-w-xs">
+    <div class="bg-white shadow-xl rounded-lg userData">
+      <div class="photo-wrapper p-2">
+        <img class="w-32 h-32 rounded-full mx-auto" [src]="userData?.picture" alt="userData" />
+      </div>
+      <div class="p-2 details">
+        <h3 class="text-center text-xl text-gray-900 font-medium leading-8" >
+          {{userData?.name}}
+        </h3>
+
+        <table class="text-xs my-3">
+          <tbody>
+            <tr>
+              <td class="px-2 py-2 text-gray-500 font-semibold">Email&nbsp;:&nbsp;</td>
+              <td class="px-2 py-2"> {{userData?.email}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
